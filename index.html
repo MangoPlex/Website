@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MangoPlex</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <meta property="og:image" content="/assets/logo.svg">
+    <meta property="og:image:alt" content="Welcome to MangoPlex!">
+    <meta property="og:site_name" content="MangoPlex">
+    <meta property="og:type" content="object">
+    <meta property="og:title" content="MangoPlex">
+    <meta property="og:url" content="/">
+    <meta property="og:description" content="Welcome to MangoPlex!">
+
+    <link rel='icon' type='image/svg+xml' href='/assets/logo.svg' size='any'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <style>
+        body {
+            --logo-color: white;
+        }
+    </style>
+    <script src='index.js'></script>
+</head>
+<body>
+    <x-include include="./includes/header.html"></x-include>
+    <div section full style="
+    background:
+        linear-gradient(#0000003f, #0000003f),
+        url('/assets/home/thumb0.jpeg'),
+        url('/assets/home/thumb0-1-2.jpeg'),
+        url('/assets/home/thumb0-1-4.jpg');
+    background-size: cover;
+    color: white
+    ">
+        <h1 diagonal style="margin-top: 50vh;">We create <span underlined>things</span>.</h1>
+    </div>
+    <div section>
+        <h1>Multipacks</h1>
+        <h3>Bundle all the packs</h3>
+        <p>Multipacks is a tool that allow you to combine multiple packs into a single, portable
+            pack. Both resources and data packs are supported!<br>
+            <a href="/projects/multipacks.html">Learn more</a>
+        </p>
+        <p>Project Link: <a href="https://github.com/MangoPlex/Multipacks">Github</a></p>
+    </div>
+    <div section style="
+    background: linear-gradient(#0000007f, #0000007f), url('/assets/home/thumb1.png');
+    background-size: cover;
+    color: white;
+    text-align: right;
+    ">
+        <h1 style="width: 100%;">Sekiei</h1>
+        <h3 style="width: 100%;">The RPG Fabric mod</h3>
+        <p>Multiplayer RPG made easy. Including Custom Items, Flickerless Scoreboard, Chest
+            UI + Book UI and more!
+        </p>
+        <p>Project Link: <a href="#sekiei">Coming soon!</a></p>
+    </div>
+    <x-include include="/includes/footer.html"></x-include>
+</body>
+</html>
